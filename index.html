@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Celeste Chamaa Links</title>
+<meta name="description" content="Celeste Chamaa: personal trainer, nutrition coach and founder of Health Evolution in Austin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: one narrow column, a bold name block, then full-width pill links; first link is the featured offer. */
+:root {
+  --bg: #eef1ec;
+  --ink: #15231f;
+  --muted: #5a6b65;
+  --card: #ffffff;
+  --line: #d5ddd7;
+  --accent: #0f5c5a;
+  --accent-ink: #ffffff;
+  --pop: #f0823c;
+  --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1816;
+    --ink: #e8efeb;
+    --muted: #9bada6;
+    --card: #172421;
+    --line: #26372f;
+    --accent: #5fd0c4;
+    --accent-ink: #0b1613;
+    --pop: #f59a5c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1816;
+  --ink: #e8efeb;
+  --muted: #9bada6;
+  --card: #172421;
+  --line: #26372f;
+  --accent: #5fd0c4;
+  --accent-ink: #0b1613;
+  --pop: #f59a5c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 48px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+header { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.avatar {
+  width: 96px; height: 96px; border-radius: 50%;
+  background: var(--accent); color: var(--accent-ink);
+  display: grid; place-items: center;
+  font-family: var(--font-display); font-weight: 700; font-size: 34px; letter-spacing: 0.02em;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px var(--pop);
+  overflow: hidden;
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+.bio { margin: 0; color: var(--muted); max-width: 36ch; text-wrap: balance; }
+.where { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+nav { display: flex; flex-direction: column; gap: 12px; }
+.link {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 16px 20px;
+  background: var(--card);
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+.link small { display: block; font-weight: 400; font-size: 13px; color: var(--muted); }
+.link .arrow { flex: none; font-size: 18px; color: var(--accent); }
+.link:hover { transform: translateY(-2px); border-color: var(--accent); }
+.link:focus-visible { outline: 3px solid var(--pop); outline-offset: 3px; }
+.link.featured { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.link.featured small, .link.featured .arrow { color: var(--accent-ink); opacity: .85; }
+footer { text-align: center; font-size: 13px; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .link { transition: none; } .link:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <!-- To use a photo: replace the initials with <img src="celeste.jpg" alt="Celeste Chamaa"> -->
+    <div class="avatar" aria-hidden="true">CC</div>
+    <h1>Celeste Chamaa</h1>
+    <p class="bio">Personal trainer, nutrition coach and founder of Health Evolution. Helping people build strength and habits that last.</p>
+    <span class="where">Austin, Texas</span>
+  </header>
+
+  <!-- EDIT: change each href (replace # with your real URL) and any text. Copy a block to add a link. -->
+  <nav aria-label="Links">
+    <a class="link featured" href="#">
+      <span>Work with me<small>Online coaching</small></span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="link" href="#">
+      <span>Health Evolution<small>Join the wellness community</small></span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="link" href="#">
+      <span>Substack<small>Read my writing</small></span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="link" href="#">
+      <span>Instagram</span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="link" href="#">
+      <span>Email me</span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+  </nav>
+
+  <footer>&copy; 2026 Celeste Chamaa</footer>
+</main>
+</body>
+</html>
